@@ -2,7 +2,7 @@
 def safe_print_list(my_list=[], x=0):
     try:
         p = ''.join(map(str, my_list[:x]))
-        print("{}".formar(p))
+        print("{}".format(p))
     except:
         pass
     m = 0
