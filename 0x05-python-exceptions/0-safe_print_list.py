@@ -5,8 +5,8 @@ def safe_print_list(my_list=[], x=0):
         print("{}".format(p))
     except:
         pass
-    m = 0
-    for i in p:
-        m += 1
-
-    return (m)
+    finally:
+        m = 0
+        for i in p:
+            m += 1
+        return (m)
