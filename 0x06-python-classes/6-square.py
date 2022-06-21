@@ -7,6 +7,7 @@ class Square:
     
     Attributes:
         __size (int): size of a side of the square
+        __position (tuple): position of square
     """
     def __init__(self, size=0, position=(0, 0)):
         """initializes the square
