@@ -11,11 +11,11 @@ class Square:
     """
     def __init__(self, size=0, position=(0, 0)):
         """initializes the square
-        
+
         Args:
             size (int): size of a side of the square
-            position (tuple): position 
-        
+            position (tuple): position
+
         Returns:
             None
         """
@@ -64,7 +64,7 @@ class Square:
             the position
         """
         return self.__position
-    
+
     @position.setter
     def position(self, value):
         """sets the position
@@ -84,6 +84,7 @@ class Square:
 
     def my_print(self):
         """prints out square of a character
+
         Returns:
             None
         """
