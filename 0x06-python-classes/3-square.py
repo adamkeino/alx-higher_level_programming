@@ -26,9 +26,6 @@ class Square:
     def area(self):
         """Calculates the area of the square
 
-        Args:
-            None
-        
         Returns: Area of square
         """
         m = int(self.__size)
