@@ -8,6 +8,7 @@ class Rectangle:
         __width: width of the rectangle
         __height: height of the rectangle
     """
+
     def __init__(self, width=0, height=0):
         """Initializes the rectangle
         Args:
@@ -80,7 +81,7 @@ class Rectangle:
 
     def __str__(self):
         """returns a print of # in the shape of the rectange
-        
+
         Returns:
             printout of # in rect format
         """
