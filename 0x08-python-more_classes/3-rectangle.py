@@ -79,10 +79,12 @@ class Rectangle:
             return (2 * (self.__width + self.__height))
 
     def __str__(self):
-        """returns a print of # in the shape of the rectange"""
+        """returns a print of # in the shape of the rectange
+        
+        Returns:
+            printout of # in rect format
+        """
         string = ""
         if self.__width != 0 and self.__height != 0:
             string += "\n".join("#" * self.__width for j in range(self.__height))
-        else:
-            string = ""
         return string
