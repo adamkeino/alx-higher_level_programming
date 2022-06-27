@@ -81,7 +81,6 @@ class Rectangle:
 
     def __str__(self):
         """returns a print of # in the shape of the rectange
-
         Returns:
             printout of # in rect format
         """
