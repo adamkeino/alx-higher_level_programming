@@ -80,3 +80,8 @@ class Rectangle(Base):
         """displays a rectangle of #"""
         for i in range(self.height):
             print("#" * self.width, end="\n")
+
+    def __str__(self):
+        """magic method for rect"""
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id,
+                self.x, self.y, self.width, self.height)
