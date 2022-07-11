@@ -35,7 +35,7 @@ class Rectangle(Base):
     def y(self):
         """getter for y"""
         return self.__y
-    
+
     @width.setter
     def width(self, value):
         """setter for width"""
@@ -84,8 +84,12 @@ class Rectangle(Base):
 
     def __str__(self):
         """magic method for rect"""
-        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id,
-                self.x, self.y, self.width, self.height)
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(
+                                                        self.id,
+                                                        self.x,
+                                                        self.y,
+                                                        self.width,
+                                                        self.height)
 
     def update(self, *args, **kwargs):
         """updates multiple attributes"""
@@ -112,4 +116,3 @@ class Rectangle(Base):
                 self.x = kwargs["x"]
             if "y" in kwargs:
                 self.y = kwargs["y"]
-

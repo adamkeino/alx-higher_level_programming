@@ -7,6 +7,7 @@ contains base class
 class Base:
     """the class itself"""
     __nb_objects = 0
+
     def __init__(self, id=None):
         """constructor for the class"""
         if id is not None:
