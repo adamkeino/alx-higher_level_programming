@@ -78,8 +78,9 @@ class Rectangle(Base):
 
     def display(self):
         """displays a rectangle of #"""
-        for i in range(self.height):
-            print("#" * self.width, end="\n")
+        print(("\n" * self.__y) +
+              "\n".join(((" " * self.__x) + ("#" * self.__width))
+                        for i in range(self.__height)))
 
     def __str__(self):
         """magic method for rect"""
